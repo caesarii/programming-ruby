@@ -9,3 +9,6 @@ end
 song = Song.new('爱的劳工', '左小祖咒', 260)
 id = song.inspect
 puts(id)
+
+str = song.to_s()
+puts(str)
