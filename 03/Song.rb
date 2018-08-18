@@ -4,15 +4,7 @@ class Song
         @artist = artist
         @duration = duration
     end
-    def name
-        return @name
-    end
-    def artist
-        return @artist
-    end
-    def duration
-        return @duration
-    end
+    attr_reader :name, :artist, :duration
     def to_s
         return "Song: #@name--#@artist (#@duration)"
     end
