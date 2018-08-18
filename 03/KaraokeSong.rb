@@ -15,7 +15,8 @@ class KaraokeSong < Song
         @lyrics = lyrics
     end
     def to_s
-        return "Song: #@name--#@artist (#@duration) {#@lyrics}"
+        # super 调用同名方法
+        return super + " {#@lyrics}"
     end
 end
 
