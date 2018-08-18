@@ -5,6 +5,9 @@ class Song
         @duration = duration
     end
     attr_reader :name, :artist, :duration
+    def duration=(new_duration)
+        @duration = new_duration
+    end
     def to_s
         return "Song: #@name--#@artist (#@duration)"
     end
@@ -19,4 +22,7 @@ puts(str)
 
 puts(song.artist)
 puts(song.name)
+puts(song.duration)
+
+song.duration = 270
 puts(song.duration)
