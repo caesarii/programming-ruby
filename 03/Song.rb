@@ -4,6 +4,15 @@ class Song
         @artist = artist
         @duration = duration
     end
+    def name
+        return @name
+    end
+    def artist
+        return @artist
+    end
+    def duration
+        return @duration
+    end
     def to_s
         return "Song: #@name--#@artist (#@duration)"
     end
@@ -15,3 +24,7 @@ puts(id)
 
 str = song.to_s()
 puts(str)
+
+puts(song.artist)
+puts(song.name)
+puts(song.duration)
