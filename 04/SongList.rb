@@ -42,6 +42,12 @@ class SongList
     def [](index)
         return @songs[index]
     end
+    def with_title(title)
+        for i in 0...@songs.length
+            return @songs[i] if title === @songs[i].name
+        end
+        return nil
+    end
 end
 
 require 'test/unit'
